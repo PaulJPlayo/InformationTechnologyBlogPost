@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Traceroute comparison chart</title>
+  <desc id="desc">Stylized traceroute hops for Phoenix, Wikipedia, and Tokyo destinations with latency bars.</desc>
+  <defs>
+    <linearGradient id="phoenix" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#ff6f1f"/>
+      <stop offset="100%" stop-color="#ffb27b"/>
+    </linearGradient>
+    <linearGradient id="wiki" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#2447d6"/>
+      <stop offset="100%" stop-color="#7aa0ff"/>
+    </linearGradient>
+    <linearGradient id="tokyo" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#1f6f3d"/>
+      <stop offset="100%" stop-color="#8cd6a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="520" rx="24" fill="#fff7f0"/>
+  <g fill="none" stroke="rgba(14,26,43,0.08)">
+    <line x1="140" y1="140" x2="840" y2="140"/>
+    <line x1="140" y1="240" x2="840" y2="240"/>
+    <line x1="140" y1="340" x2="840" y2="340"/>
+  </g>
+  <g fill="#0e1a2b" font-family="Montserrat, Arial, sans-serif">
+    <text x="140" y="94" font-size="26" font-weight="700">Traceroute Hop Count &amp; Latency</text>
+    <text x="140" y="130" font-size="16">Destination</text>
+    <text x="840" y="130" font-size="16" text-anchor="end">Roundtrip Time (ms)</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#0e1a2b">
+    <text x="140" y="180">phoenix.uagc.edu</text>
+    <text x="140" y="280">en.wikipedia.org</text>
+    <text x="140" y="380">innovationhub.jp</text>
+  </g>
+  <rect x="300" y="162" width="280" height="32" rx="16" fill="url(#phoenix)"/>
+  <rect x="300" y="262" width="380" height="32" rx="16" fill="url(#wiki)"/>
+  <rect x="300" y="362" width="560" height="32" rx="16" fill="url(#tokyo)"/>
+  <g fill="#fff">
+    <circle cx="332" cy="178" r="9"/>
+    <circle cx="356" cy="178" r="9"/>
+    <circle cx="380" cy="178" r="9"/>
+    <circle cx="404" cy="178" r="9"/>
+    <circle cx="428" cy="178" r="9"/>
+    <circle cx="452" cy="178" r="9"/>
+    <circle cx="476" cy="178" r="9"/>
+    <circle cx="500" cy="178" r="9"/>
+    <circle cx="524" cy="178" r="9"/>
+
+    <circle cx="332" cy="278" r="9"/>
+    <circle cx="356" cy="278" r="9"/>
+    <circle cx="380" cy="278" r="9"/>
+    <circle cx="404" cy="278" r="9"/>
+    <circle cx="428" cy="278" r="9"/>
+    <circle cx="452" cy="278" r="9"/>
+    <circle cx="476" cy="278" r="9"/>
+    <circle cx="500" cy="278" r="9"/>
+    <circle cx="524" cy="278" r="9"/>
+    <circle cx="548" cy="278" r="9"/>
+    <circle cx="572" cy="278" r="9"/>
+    <circle cx="596" cy="278" r="9"/>
+    <circle cx="620" cy="278" r="9"/>
+
+    <circle cx="332" cy="378" r="9"/>
+    <circle cx="356" cy="378" r="9"/>
+    <circle cx="380" cy="378" r="9"/>
+    <circle cx="404" cy="378" r="9"/>
+    <circle cx="428" cy="378" r="9"/>
+    <circle cx="452" cy="378" r="9"/>
+    <circle cx="476" cy="378" r="9"/>
+    <circle cx="500" cy="378" r="9"/>
+    <circle cx="524" cy="378" r="9"/>
+    <circle cx="548" cy="378" r="9"/>
+    <circle cx="572" cy="378" r="9"/>
+    <circle cx="596" cy="378" r="9"/>
+    <circle cx="620" cy="378" r="9"/>
+    <circle cx="644" cy="378" r="9"/>
+    <circle cx="668" cy="378" r="9"/>
+    <circle cx="692" cy="378" r="9"/>
+    <circle cx="716" cy="378" r="9"/>
+    <circle cx="740" cy="378" r="9"/>
+  </g>
+  <g fill="#0e1a2b" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="600">
+    <text x="640" y="188">9 hops · 32 ms</text>
+    <text x="740" y="288">13 hops · 68 ms</text>
+    <text x="820" y="388">18 hops · 188 ms</text>
+  </g>
+  <g fill="#0e1a2b" font-family="Montserrat, Arial, sans-serif" font-size="14">
+    <text x="140" y="440">Hops visualized as circles · Latency indicated by bar length</text>
+  </g>
+</svg>

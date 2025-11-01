@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information Technology Blog Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+  <header class="site-header">
+    <div class="branding">
+      <div class="logo">Information Technology Blog Post</div>
+      <p class="tagline">Documenting my Information Technology evolution</p>
+    </div>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li class="has-submenu">
+          <a href="#blogs" aria-haspopup="true">Blog</a>
+          <ul class="submenu">
+            <li><a href="#blogs">All Posts</a></li>
+            <li><a href="#about">About Me</a></li>
+          </ul>
+        </li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#about">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Information Technology Blog Post: 6-Post IT Blog</h1>
+        <p>A curated set of reflections that trace my growth through programming, networking, productivity tools, security, and forward-looking tech topics.</p>
+        <a class="hero-cta" href="#post-1">Read the Series</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-card">
+        <h2>How to Navigate This Blog</h2>
+        <p>Each tile below links to a detailed post adapted from course assessments across Weeks One through Five. I have folded in instructor and peer feedback, organized the posts with meaningful labels, and highlighted media where it adds context—such as Scratch embeds, UI walkthroughs, and networking diagnostics. Dive in sequentially or jump to the topics that speak to you.</p>
+      </div>
+    </section>
+
+    <section id="blogs" class="blog-grid">
+      <h2>Blog Tile Overview</h2>
+      <div class="grid">
+        <article class="blog-card">
+          <span class="category fire">Programming Languages</span>
+          <h3>Scratch to Python: Lessons in Abstraction</h3>
+          <p>Building a story-driven Scratch project clarified how syntax evolves from machine code to high-level languages.</p>
+          <a href="#post-1" class="read-more">Post #1</a>
+        </article>
+        <article class="blog-card">
+          <span class="category forest">Social Media</span>
+          <h3>Instagram: Creativity and Connection</h3>
+          <p>A closer look at the platform’s usability, design choices, functionality, and future wish list.</p>
+          <a href="#post-2" class="read-more">Post #2</a>
+        </article>
+        <article class="blog-card">
+          <span class="category blue">Productivity Suite</span>
+          <h3>Documenting a Day Across Four Tools</h3>
+          <p>Comparing word processing, spreadsheets, presentations, and databases through a lived workflow.</p>
+          <a href="#post-3" class="read-more">Post #3</a>
+        </article>
+        <article class="blog-card">
+          <span class="category forest">Networking</span>
+          <h3>Packets, Pings, and Traceroutes</h3>
+          <p>Tracing data across the globe to see how geography, latency, and troubleshooting intersect.</p>
+          <a href="#post-4" class="read-more">Post #4</a>
+        </article>
+        <article class="blog-card">
+          <span class="category fire">Workplace IT</span>
+          <h3>Computers in Community Healthcare</h3>
+          <p>Exploring why digital literacy matters in clinics and how infrastructure will evolve.</p>
+          <a href="#post-5" class="read-more">Post #5</a>
+        </article>
+        <article class="blog-card">
+          <span class="category blue">Security</span>
+          <h3>Guardrails for the Modern Network</h3>
+          <p>Understanding ICMP-based attacks, ransomware, phishing, and layered defenses.</p>
+          <a href="#post-6" class="read-more">Post #6</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="posts" class="posts-feed">
+      <article id="post-1" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #1</span>
+            <span class="post-label">Programming Languages</span>
+          </p>
+          <h2>Story Trail in Scratch: What Block-Based Programming Taught Me</h2>
+          <p class="post-subtitle">Embedding my Scratch project and reflecting on the progression from machine code to high-level languages.</p>
+        </header>
+        <div class="post-content">
+          <figure class="scratch-link-card">
+            <img src="assets/scratch-link.svg" alt="Scratch project link placeholder showing Scratch branding">
+            <figcaption>Direct link: <a href="https://scratch.mit.edu/projects/123456789/" target="_blank" rel="noopener">https://scratch.mit.edu/projects/123456789/</a></figcaption>
+          </figure>
+          <p>I designed “Story Trail,” an interactive Scratch experience where players help a camper choose sustainable actions during a forest hike. Building it required decomposing the story into sprites, backdrops, and event-driven scripts. The most challenging piece was synchronizing dialog transitions with sprite animations. At first, the program stuttered because I triggered multiple broadcast messages at once. Adding short waits and grouping code into custom blocks gave me reusable logic and smoother pacing.</p>
+          <p>This project reinforced two core programming lessons. First, prototyping iteratively matters. I used Scratch’s sprites as a visual debugger, watching variables change in real time while the stage played back my code.</p>
+          <h3>Scratch Experience</h3>
+          <p>I’ve never used Scratch before and was pleasantly surprised when I began building the Week 1 assignment. When I first read the prompt, I assumed I would need to code a project in Visual Studio Code, writing line-by-line functions. Instead, Scratch greeted me with vibrant sprites, customizable backgrounds, sound effects, and a library of blocks that snap together like puzzle pieces. I customized Sprite with new colors, swapped nature scenes as different on-screen elements were clicked, and added friendly dialogue and questions for the user. It felt simple, fun, and approachable—and I’m excited to keep exploring what’s possible as my question list about Scratch keeps growing.</p>
+          <h3>Insights</h3>
+          <p>This assignment challenged my assumption that traditional text-based code is the only path to building programs, websites, or apps. The block formation Scratch uses makes logic more tangible; each block’s shape communicates its purpose, which demystifies syntax. I also appreciate Scratch’s extensive library of sounds, backgrounds, and animations, which accelerates creativity even for beginners.</p>
+          <h3>Comparison</h3>
+          <p>Scratch feels very different from the programming concepts covered in Chapter 10 of the course textbook, <em>Certmaster Learn Tech+</em>. Section 10.1 emphasizes how syntax defines rules for languages like Java, C++, and Python—every statement, symbol, capital letter, punctuation mark, and comment matters (CompTIA, Inc. 10.1.2). Scratch still relies on syntax, but it hides the complexity behind block-based interactions. I see Scratch as a tool designed to simplify coding for small-scale, engaging projects, whereas interpreted languages such as JavaScript—my personal favorite for web development—offer flexibility across platforms. As the text notes, interpreted languages like Python, JavaScript, Ruby, and Perl provide portability and dynamic features (CompTIA, Inc. 10.1.4).</p>
+          <h3>Programming Languages</h3>
+          <p>Chapter 10 also outlines several language categories tailored to specific project needs: query languages, interpreted languages, assembly languages, and compiled languages. Query languages, including SQL, GraphQL, and XQuery, excel at retrieving, manipulating, defining, and controlling data (“Query languages are programming languages for searching a database or dataset,” Aerospike, 1). Interpreted languages such as Python, JavaScript, Ruby, and PHP enable rapid prototyping, cross-platform support, and automation—qualities I lean on frequently. Assembly languages (for example, x86, ARM, and PowerPC) shine in performance-critical scenarios where hardware-level control matters. Compiled languages like C, C++, C#, Go, and Rust deliver optimized performance and platform-specific capabilities. Understanding these categories helps me match the right language to a project’s goals and constraints.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Scratch</li>
+            <li>Programming Basics</li>
+          </ul>
+        </footer>
+      </article>
+
+      <article id="post-2" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #2</span>
+            <span class="post-label">Web/Mobile App Critique</span>
+          </p>
+          <h2>Instagram: Everyday Creativity and Connection</h2>
+          <p class="post-subtitle">Observing usability, design, functionality, and improvement ideas for a social staple.</p>
+        </header>
+        <div class="post-content">
+          <figure class="media-frame">
+            <img src="assets/IMG_9596.jpeg" alt="Instagram home feed with stories and recent posts visible">
+            <figcaption>Instagram balances social updates and creative inspiration on a single feed.</figcaption>
+          </figure>
+          <p>For this reflection I chose an app I use constantly in both professional and social settings: Instagram. It keeps me connected to friends, clients, and creative communities while giving me an outlet to share nature shots, art, code projects, and music. With millions relying on it for business, careers, and personal storytelling, Instagram has become a global stage that still feels approachable.</p>
+          <h3>Usability</h3>
+          <p>Instagram’s usability is intentionally straightforward. Following someone is as simple as tapping the blue <em>Follow</em> button, and once you connect with another account their posts and stories appear instantly in your feed.</p>
+          <figure class="media-frame">
+            <img src="assets/IMG_9597.jpeg" alt="Instagram post highlighting like, comment, and share buttons">
+            <figcaption>Each post uses intuitive icons—heart, bubble, and paper plane—to cue likes, comments, and shares.</figcaption>
+          </figure>
+          <p>Every post supports likes, comments, and shares via familiar icons. The heart records appreciation, the speech bubble opens discussion, and the paper plane forwards content to friends. These gestures are so widely recognized that even first-time users grasp the interaction model fast.</p>
+          <h3>Design</h3>
+          <p>Instagram’s design centers on imagery. The feed devotes most of the screen to the latest photo or video, keeping controls minimal and easy to reach. Profile pages aggregate everything “about you” in one view—profile photo, bio, link, and the grid of posts and highlights you have shared.</p>
+          <figure class="media-frame">
+            <img src="assets/IMG_9598.jpeg" alt="Instagram profile page showing photo grid and highlights">
+            <figcaption>Profile pages spotlight your visual identity—bio, links, story highlights, and grid posts.</figcaption>
+          </figure>
+          <p>The Explore tab adds discovery by curating trending, funny, or interest-aligned content from accounts you may not follow. It keeps the experience fresh and invites browsing beyond your immediate circle.</p>
+          <h3>Functionality</h3>
+          <p>Functionally, Instagram revolves around taps and swipes. Clear iconography guides navigation, whether you are publishing a story, reacting to a reel, or messaging a friend. The app rarely needs instructions because the gestures feel intuitive.</p>
+          <h3>Recommendations</h3>
+          <p>Even with its strengths, Instagram could push personalization further. Allowing users to customize profile background colors would help brands and artists express themselves more fully. Introducing subtle motion graphics could make the interface feel more immersive. Lastly, finding a way to present high-resolution art or landscape posts in larger, richer detail would elevate the platform for photographers and designers.</p>
+          <figure class="media-frame">
+            <img src="assets/IMG_9599.jpeg" alt="Instagram explore tab showcasing suggested content">
+            <figcaption>The Explore tab keeps the experience lively with suggested content tailored to your activity.</figcaption>
+          </figure>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Instagram</li>
+            <li>Social Media</li>
+            <li>App Review</li>
+          </ul>
+        </footer>
+      </article>
+
+      <article id="post-3" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #3</span>
+            <span class="post-label">Documenting a Day</span>
+          </p>
+          <h2>Coordinating a Busy Day with Four Productivity Tools</h2>
+          <p class="post-subtitle">Comparing word processors, spreadsheets, presentations, and databases through practical tasks.</p>
+        </header>
+        <div class="post-content">
+          <h3>Comparison</h3>
+          <p><q>“A Database Application is software designed to interact with a database to store, retrieve, and manage data efficiently.”</q> (Tadabase, 2025). Word processors and Excel spreadsheets resemble database applications because they also capture information, retrieve it on demand, and manage data in structured ways. When a user types text, numbers, or inserts images in a word processor, the application records and stores that data just as a database would. Excel performs similar tasks with cells and ranges, pulling information for calculations and analysis. The difference lies in design and intent: each tool is optimized for distinct workflows, yet all share the core ability to store, retrieve, and manage data. As noted by GeeksForGeeks, “Databases are classified based on structure, data model, storage method, and data integrity.” (GeeksForGeeks, 20205). Examples include hierarchical, network, object-oriented, relational, cloud, centralized, personal, operational, and NoSQL databases. Word processors and spreadsheets operate like specialized databases tailored to their unique purposes.</p>
+          <h3>Advantages &amp; Disadvantages</h3>
+          <p>Microsoft Excel offers familiarity, flexibility, cost effectiveness, advanced data analysis, integration with other Microsoft products, scalability, and automation. Its drawbacks appear when handling real-time unstructured data or when a project demands highly interactive dashboards. Excel spreadsheets also shine for data analysis, charting, templating, automation, collaboration, formulas, data handling, organization, calculations, and customizable reports. On the downside, spreadsheets can face limits with very large datasets, data integrity, recovery, and security.</p>
+          <h3>Recommendations</h3>
+          <p>For documenting daily activity, I recommend Microsoft Excel. It lets me write freely in bullet or paragraph formats while keeping my notes organized and professional. That versatility also makes Excel a reliable option for composing essays or structured assignments that benefit from tidy formatting and precise tracking.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Productivity</li>
+            <li>Office Suite</li>
+            <li>Workflow Design</li>
+          </ul>
+        </footer>
+      </article>
+
+      <article id="post-4" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #4</span>
+            <span class="post-label">Traveling Through a Network</span>
+          </p>
+          <h2>Ping and Traceroute Activity</h2>
+          <p class="post-subtitle">Comparing response times for Google, UAGC, and Bing while reflecting on network efficiency.</p>
+        </header>
+        <div class="post-content">
+          <h3>Ping Activity</h3>
+          <h4>Ping Results</h4>
+          <h5>Google.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.44.10 PM.png" alt="Ping output to Google.com showing 6-11 ms responses">
+            <figcaption>Google.com averages between 6–11 ms while transferring 64 bytes.</figcaption>
+          </figure>
+          <p>Google.com takes anywhere between 6–11 ms to use 64 bytes of data.</p>
+          <h5>Uagc.instructure.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.48.55 PM.png" alt="Ping output to uagc.instructure.com showing 58-60 ms responses">
+            <figcaption>UAGC’s learning portal responds in roughly 58–60 ms for 64-byte packets.</figcaption>
+          </figure>
+          <p>Uagc.instructure.com takes anywhere between 58–60 ms to use 64 bytes of data.</p>
+          <h5>Bing.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.51.50 PM.png" alt="Ping output to Bing.com showing 7-9 ms responses">
+            <figcaption>Bing.com returns results in approximately 7–9 ms with 64-byte packets.</figcaption>
+          </figure>
+          <p>Bing.com takes anywhere between 7–9 ms to use 64 bytes of data.</p>
+          <h4>Traceroute Results</h4>
+          <h5>Google.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.56.13 PM.png" alt="Traceroute output to Google.com">
+            <figcaption>Traceroute path to Google.com.</figcaption>
+          </figure>
+          <h5>Uagc.instructure.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.57.11 PM-1.png" alt="Traceroute output to uagc.instructure.com">
+            <figcaption>Traceroute path to uagc.instructure.com.</figcaption>
+          </figure>
+          <h5>Bing.com</h5>
+          <figure class="media-frame">
+            <img src="assets/Screen Shot 2025-10-15 at 4.57.11 PM.png" alt="Traceroute output to Bing.com">
+            <figcaption>Traceroute path to Bing.com.</figcaption>
+          </figure>
+          <h3>Reflection</h3>
+          <p>I think the difference in speed using ping and traceroute shows which websites are faster and more efficient. The slower the response, the less efficient; the faster the response, the more efficient. The roundtrip time highlights how responsive a site is, and in these tests Google.com consistently delivered the quickest times across locations—which makes sense given Google’s infrastructure. Ping and traceroute become valuable when testing site updates to confirm whether performance improved or degraded. If a site is offline or disconnected from the global network, the ping or traceroute request may time out or return an error. The same can happen if the testing device lacks a stable connection.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Networking</li>
+            <li>Ping</li>
+            <li>Traceroute</li>
+          </ul>
+        </footer>
+      </article>
+
+      <article id="post-5" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #5</span>
+            <span class="post-label">Computers in the Workplace</span>
+          </p>
+          <h2>Construction: Building Smarter with IT</h2>
+          <p class="post-subtitle">Reflecting on seven years in construction and the tech that keeps projects moving.</p>
+        </header>
+        <div class="post-content">
+          <p>I chose construction because I was a construction worker for seven years and saw firsthand how information technology permeates the job site. Tools such as project management software, drones, and AI-driven modeling elevate efficiency, accuracy, and collaboration. AI now assists with design concepts and data analysis, while building information modeling software keeps teams aligned on every detail.</p>
+          <p>Technology enhances planning, management, site monitoring, and communication. With IT woven into daily workflows, errors shrink, schedules tighten, and safety improves. Cloud computing lets companies access drawings, permits, and schedules from anywhere, which keeps subcontractors and field crews synchronized.</p>
+          <p>Computer literacy is the new jobsite superpower. It supports clear communication, thorough analysis, and effective risk management—critical traits when coordinating trades and meeting milestones. Innovation has always propelled construction forward, from steam engines to today’s AI-assisted equipment.</p>
+          <p>Looking ahead, I expect information technology and AI to keep transforming industries through automation, data-driven decisions, and continuous innovation. The workforce will adapt by learning new skills, ensuring that the tools we adopt keep projects efficient, resilient, and safe.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Construction</li>
+            <li>Workplace IT</li>
+            <li>Future Trends</li>
+          </ul>
+        </footer>
+      </article>
+
+      <article id="post-6" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #6</span>
+            <span class="post-label">Information Security</span>
+          </p>
+          <h2>Information &amp; System Security</h2>
+          <p class="post-subtitle">Exploring security fundamentals, pharming threats, and the human element of social engineering.</p>
+        </header>
+        <div class="post-content">
+          <p>Information &amp; system security involves securing data from unauthorized access, use, disclosure, disruption, and destruction. "Information security, or InfoSec, includes the tools and processes for preventing, detecting, and remediating attacks and threats to sensitive information." (Fortinet, 2025).</p>
+          <p>Organizations today depend more on digital infrastructure, so information &amp; system security is required for most data. Individuals rely on that same infrastructure for payments, photos, email, and professional work, making information security essential for everyone.</p>
+          <p>Organizations &amp; individuals can apply information security through networks, applications, data clouds, and physical hard drives. These protective layers help prevent unauthorized access and reduce the risk of malware or ransomware, pharming, computer viruses, phishing or smishing, HTTPS phishing, and social engineering.</p>
+          <p>Some key types of information security for individuals &amp; organizations are identity &amp; access management, cryptography, incident response, and disaster recovery. Network security protects systems from unauthorized access and attacks using firewalls, VPNs, and intrusion detection systems. Application security focuses on protecting software from the code level upward. Cloud security secures data and applications that rely on cloud environments.</p>
+          <p>Cryptography may be the most efficient security control today because it uses encryption to scramble information, keeping data unreadable to anyone without the proper key. Disaster recovery is a safety net that backs up data securely so it can be restored after an incident.</p>
+          <p>Firewalls act as a barrier between a secure network and external networks, keeping unauthorized users out. Antivirus or anti-malware software can detect threats in a system before they cause damage. Encryption works like cryptography to scramble data for unauthorized users. VPNs create a secure private space for data on public networks.</p>
+          <p>Another common safeguard is multi-factor authentication, which requires users to provide two or more verification methods to access data or systems. With so much confidential data moving digitally, it is critical that information &amp; system security remains prominent and continues to advance.</p>
+          <h3>Pharming</h3>
+          <p>Pharming is a cyberattack that directs users from the website they want to visit to an illegitimate site that steals sensitive information. "Pharming, a portmanteau of the words phishing and farming, is an online scam similar to phishing, where a website's traffic is manipulated, and confidential information is stolen." (Kaspersky, 2025).</p>
+          <p>Pharming is considered more dangerous than phishing because it can affect a larger number of users. Pharming attacks manipulate the Domain Name System (DNS) infrastructure to redirect the user to a malicious site.</p>
+          <p>Two types of pharming are malware-based pharming and DNS server poisoning. Malware-based pharming attacks an individual computer with malicious code, often delivered through emails or downloads. The attack alters the local hosts file to reroute a user to a malicious site, even when the correct domain is entered. DNS server poisoning targets the DNS server itself, altering the DNS table so attackers can redirect traffic from a legitimate domain to an illegitimate one. It is harder to detect because the user's computer is not directly attacked.</p>
+          <p>"An attack in which an attacker causes the subscriber to be redirected to a fraudulent website, typically a fraudulent verifier/RP in the context of authentication." (NIST, 2025). Pharming attacks ultimately give an attacker access to sensitive information and the ability to deliver harmful software.</p>
+          <h3>Social Engineering</h3>
+          <p>Social engineering is the act of manipulating a user to give away sensitive information or perform actions that compromise their computer system. "Social engineering is the term used for a broad range of malicious activities accomplished through human interactions." (Imperva, 2025).</p>
+          <p>These attacks include baiting, scareware, pretexting, phishing, and spear phishing. Six principles explain why social engineering works: reciprocity, commitment, consistency, social proof, authority, liking, and scarcity.</p>
+          <p>Computer systems become vulnerable through the user in this type of attack because the attacker manipulates the victim into performing a malicious action on their own system. Social engineering can cause data loss or theft, financial loss, operational disruption, system access, identity theft, security breaches, damage, and installation of unwanted malware.</p>
+          <p>"Be suspicious of unsolicited phone calls, visits, or email messages from individuals asking about employees or other internal information. If an unknown individual claims to be from a legitimate organization, try to verify his or her identity directly with the company." (America's Cyber Defense Agency, 2025). Security technologies combined with social vigilance and education can help users defend against social engineering attacks.</p>
+        </div>
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Information Security</li>
+            <li>Pharming</li>
+            <li>Social Engineering</li>
+          </ul>
+        </footer>
+      </article>
+
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p>My name is Paul J. Playo, and I build websites for customers who need a compelling online presence to showcase their businesses. Whether the project calls for ecommerce functionality, a custom experience, or an informational hub, I map every feature to the client's goals.</p>
+        <p>I run Oracle Coding &amp; Media out of Chicago, IL, partnering with clients around the world to bring their ideas to life. Alongside my professional work, I'm studying for a Bachelor's degree in Computer Science so I can deepen my expertise in web, application, and software development.</p>
+        <p>Clients connect with me through Fiverr, email, or the Oracle Coding &amp; Media Instagram account. From our first conversation, I focus on web development, web graphic design, and interactive media because I believe an engaging user experience—like thoughtful hover states—drives better outcomes.</p>
+        <p>I offer professional custom websites ranging from $700.00 to $4,500.00 USD, with Basic, Standard, and Premium plans. Flexible payment plans are available, and I walk through the details on Zoom to tailor milestones to each project. Every build can include marketing tools, payment processing, social media links, shipping workflows, inventory tracking, videos, galleries, booking, reviews, and blogs.</p>
+        <p>My aspiration for Oracle Coding &amp; Media is to serve ten clients each month while delivering the polish and performance their ideas deserve. Let's collaborate and turn your next digital concept into reality.</p>
+        <a class="about-cta" href="mailto:OracleCodingandMedia@gmail.com">Say hello</a>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <h2>Stay in the Loop</h2>
+      <p>Get the latest posts, behind-the-scenes notes, and curated reads delivered every Friday morning.</p>
+      <form class="newsletter-form">
+        <label for="email" class="visually-hidden">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div>
+      <strong>Information Technology Blog Post</strong>
+      <p>Made with passion for adventure, storytelling, and community.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#blogs">Blogs</a>
+      <a href="#posts">All Posts</a>
+      <a href="#about">About</a>
+      <a href="mailto:hello@trailblazewords.com">Email</a>
+    </div>
+  </footer>
+</body>
+</html>

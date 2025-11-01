@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="420" viewBox="0 0 780 420" role="img" aria-labelledby="title desc">
+  <title id="title">Scratch project placeholder</title>
+  <desc id="desc">An illustrative Scratch branded card prompting users to open the embedded project link.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9f50"/>
+      <stop offset="100%" stop-color="#ff6f1f"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="rgba(14,26,43,0.3)"/>
+    </filter>
+  </defs>
+  <rect width="780" height="420" rx="36" fill="#fff7f0"/>
+  <rect x="60" y="56" width="660" height="308" rx="28" fill="url(#bg)" filter="url(#shadow)"/>
+  <g fill="#fff">
+    <text x="132" y="168" font-family="'Comic Sans MS', 'Nunito', sans-serif" font-weight="700" font-size="64" letter-spacing="0.04em">SCRATCH</text>
+    <text x="132" y="224" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="600" opacity="0.85">Launch the project in a new tab</text>
+  </g>
+  <g transform="translate(526 186)">
+    <path d="M45.4 0c5.9 0 10.6 4.7 10.6 10.6v13.2c5.3 1.7 9.1 6.7 9.1 12.6s-3.8 10.9-9.1 12.6v13.3c0 5.8-4.7 10.6-10.6 10.6s-10.6-4.7-10.6-10.6v-11c-2.9 0.9-5.9 1.4-9 1.4-17.4 0-31.6-14.2-31.6-31.6S8.3 0 25.8 0c3.1 0 6.1 0.5 9 1.4V10.6C34.8 4.7 39.5 0 45.4 0z" fill="#fff"/>
+  </g>
+  <rect x="132" y="264" width="220" height="52" rx="26" fill="#fff" opacity="0.9"/>
+  <text x="150" y="298" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700" fill="#ff6f1f">Open Project</text>
+</svg>
