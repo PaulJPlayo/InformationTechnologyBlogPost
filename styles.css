@@ -61,6 +61,15 @@ a:focus-visible {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-left: auto;
+  order: 1;
+}
+
 .header-cta:hover,
 .header-cta:focus-visible {
   background: rgba(255, 255, 255, 0.22);
@@ -94,6 +103,12 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   font-weight: 600;
+}
+
+.primary-nav {
+  flex: 1 1 100%;
+  order: 2;
+  margin-top: 0.75rem;
 }
 
 .primary-nav .menu > li {
@@ -753,7 +768,8 @@ a:focus-visible {
   scroll-margin-top: clamp(5rem, 12vw, 7.5rem);
 }
 
-#about {
+#about,
+#about-top {
   scroll-margin-top: clamp(5rem, 12vw, 7.5rem);
 }
 
@@ -771,19 +787,59 @@ a:focus-visible {
 @media (max-width: 780px) {
   .site-header {
     position: static;
-    gap: 1.5rem;
-    text-align: center;
+    gap: 0.9rem;
+    text-align: left;
+  }
+
+  .primary-nav {
+    width: 100%;
+    flex-basis: 100%;
+    order: 2;
+    margin-top: 0.25rem;
   }
 
   .primary-nav .menu {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
   }
 
-  .header-cta {
+  .primary-nav .menu > li {
+    flex: 1 1 0;
+  }
+
+  .primary-nav .menu > li > a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .branding {
     width: 100%;
-    padding: 0.85rem 1.75rem;
+    align-items: flex-start;
+  }
+
+  .tagline {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header-actions {
+    width: 100%;
     order: 3;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-left: 0;
+    margin-top: -0.2rem;
+  }
+
+  .header-actions .header-cta {
+    flex: 1 1 12rem;
+    min-width: 12rem;
+    padding: 0.85rem 1.75rem;
   }
 
   .essay-wrapper {
