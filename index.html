@@ -397,6 +397,100 @@
         </footer>
       </article>
 
+      <article id="post-8" class="blog-post">
+        <header>
+          <p class="post-meta">
+            <span class="post-number">Post #8</span>
+            <span class="post-label">Java &amp; Object-Oriented Programming</span>
+          </p>
+          <h2>Java &amp; OOP: What Finally Clicked for Me</h2>
+          <p class="post-subtitle">Guidance on getting Java installed (without a step-by-step tutorial) &amp; the OOP ideas that make Java feel less intimidating.</p>
+        </header>
+
+        <div class="post-content">
+          <p>When I first started Java, the hardest part was not writing <code>System.out.println</code>—it was realizing that Java expects you to set up a real “developer environment.” In my head, I thought “download Java” meant I was done. What I learned is that for coding in Java, you need the <strong>JDK</strong> (Java Development Kit) so you can compile code, not just run it.</p>
+
+          <p>This post is written the way I would explain it to another beginner: I am not going to give a step-by-step install tutorial (there are great ones already), but I <em>will</em> explain what matters, what to look for, and why object-oriented programming (OOP) is the reason Java is structured the way it is.</p>
+
+          <h3>Java installation: the “big rocks” I focused on</h3>
+          <p>Instead of memorizing a million setup steps, I used a simple checklist to confirm my setup was actually working:</p>
+          <ul>
+            <li><strong>Install a JDK (not just “Java”).</strong> The JDK includes the compiler (<code>javac</code>) that turns your <code>.java</code> file into something the JVM can run.</li>
+            <li><strong>Verify your computer can find Java.</strong> In the terminal, I looked for <code>java -version</code> and <code>javac -version</code> to return real version info (not “command not found”).</li>
+            <li><strong>Make sure VS Code recognizes the JDK.</strong> VS Code + the Java extensions need to know where your JDK is installed so it can build/run your code.</li>
+            <li><strong>Keep your first project folder simple.</strong> One folder, one <code>.java</code> file, and the class name matches the file name (example: <code>HelloMyNameIs.java</code> contains <code>public class HelloMyNameIs</code>).</li>
+            <li><strong>If something breaks, read the first error line slowly.</strong> As a beginner, I learned the first error usually points to the real issue (missing semicolon, wrong class name, missing JDK, etc.).</li>
+          </ul>
+
+          <h3>Resources I used (so you don’t have to guess)</h3>
+          <p>These links helped me install Java, set up VS Code, and understand what OOP means in real code:</p>
+          <ul>
+            <li><strong>Oracle Java Tutorials (Getting Started)</strong> —
+              <a href="https://docs.oracle.com/javase/tutorial/getStarted/index.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/getStarted/index.html</a>
+            </li>
+            <li><strong>Oracle: Object-Oriented Programming Concepts</strong> —
+              <a href="https://docs.oracle.com/javase/tutorial/java/concepts/" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/java/concepts/</a>
+            </li>
+            <li><strong>Java in Visual Studio Code</strong> —
+              <a href="https://code.visualstudio.com/docs/languages/java" target="_blank" rel="noopener">https://code.visualstudio.com/docs/languages/java</a>
+            </li>
+            <li><strong>Extension Pack for Java (VS Code Marketplace)</strong> —
+              <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" target="_blank" rel="noopener">https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack</a>
+            </li>
+            <li><strong>Eclipse Temurin (Adoptium) JDK Downloads</strong> —
+              <a href="https://adoptium.net/temurin/releases" target="_blank" rel="noopener">https://adoptium.net/temurin/releases</a>
+            </li>
+          </ul>
+
+          <h3>OOP explained like I’m talking to another beginner</h3>
+          <p>Object-oriented programming sounded complicated until I thought about it like this:</p>
+          <ul>
+            <li><strong>A class</strong> is a blueprint (the plan).</li>
+            <li><strong>An object</strong> is a real thing built from that blueprint (the actual “instance”).</li>
+            <li><strong>Fields</strong> are what the object knows (data).</li>
+            <li><strong>Methods</strong> are what the object can do (behavior).</li>
+          </ul>
+
+          <p>Even the small “Hello My Name Is” program uses the OOP mindset. In Java, your code is organized inside a <code>class</code>. The <code>main</code> method is the starting point where the program begins running. For beginners, that structure is actually a helpful guardrail because it keeps code organized instead of turning into one giant messy script.</p>
+
+          <h3>The 4 OOP concepts I keep seeing everywhere</h3>
+          <ul>
+            <li><strong>Encapsulation:</strong> Keep details protected &amp; expose only what’s needed. In practice, that means using private fields and public methods so other code can’t accidentally break your data.</li>
+            <li><strong>Abstraction:</strong> Focus on what something does, not how it does it. This is why interfaces and clean method names are powerful—you can use a feature without knowing every internal detail.</li>
+            <li><strong>Inheritance:</strong> Reuse code by building a new class from an existing one. This can save time, but I learned it can also create confusion if you inherit too much “stuff” you don’t actually need.</li>
+            <li><strong>Polymorphism:</strong> One idea, many forms. The same method name can behave differently depending on what kind of object is using it. This is where Java starts to feel “professional,” because it supports flexible designs.</li>
+          </ul>
+
+          <h3>Object-oriented design principles (my newbie take)</h3>
+          <p>I’m still learning design principles, but these are the ones that already make my code cleaner:</p>
+          <ul>
+            <li><strong>Single responsibility:</strong> One class should do one main job. If it does everything, debugging becomes painful.</li>
+            <li><strong>Names matter:</strong> Clear class and method names reduce confusion more than I expected.</li>
+            <li><strong>Hide what doesn’t need to be public:</strong> If everything is public, it’s easy to break things accidentally.</li>
+            <li><strong>Prefer composition when it makes sense:</strong> Sometimes it’s better to build with smaller parts (objects working together) instead of forcing inheritance.</li>
+          </ul>
+
+          <p>My goal as a beginner is not to write “perfect architecture.” It’s to write code that I can explain, maintain, and improve. That’s what I think employers actually care about—clear thinking and steady progress.</p>
+
+          <h3>Sources</h3>
+          <ul class="reference-list">
+            <li>Oracle. (n.d.). <em>Trail: Getting Started.</em> The Java™ Tutorials. https://docs.oracle.com/javase/tutorial/getStarted/index.html</li>
+            <li>Oracle. (n.d.). <em>Lesson: Object-Oriented Programming Concepts.</em> The Java™ Tutorials. https://docs.oracle.com/javase/tutorial/java/concepts/</li>
+            <li>Microsoft. (n.d.). <em>Java in Visual Studio Code.</em> https://code.visualstudio.com/docs/languages/java</li>
+            <li>Microsoft. (n.d.). <em>Extension Pack for Java.</em> Visual Studio Marketplace. https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack</li>
+            <li>Eclipse Adoptium. (n.d.). <em>Temurin Releases.</em> https://adoptium.net/temurin/releases</li>
+          </ul>
+        </div>
+
+        <footer class="post-footer">
+          <ul class="post-tags">
+            <li>Java</li>
+            <li>OOP</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </footer>
+      </article>
+
     </section>
 
     <section id="about" class="about">
